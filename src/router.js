@@ -5,6 +5,10 @@ import Skills from './views/Skills.vue'
 import Portfolio from './views/Portfolio.vue'
 
 const routes = [{
+  path: '/',
+  name: 'about',
+  component: About
+}, {
   path: '/about',
   name: 'about',
   component: About
