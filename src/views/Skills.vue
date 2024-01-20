@@ -62,10 +62,20 @@ const skills = computed(() => {
       link: 'https://elm-lang.org/',
       level: 'intermediate'
     }, {
+      name: 'PostgreSQL',
+      img: 'postgres.png',
+      link: 'https://www.postgresql.org/',
+      level: 'intermediate'
+    }, {
       name: 'JSON',
       img: 'json.png',
       link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON',
       level: 'expert'
+    }, {
+      name: 'Haskell',
+      img: 'haskell.jpg',
+      link: 'https://www.haskell.org/',
+      level: 'novice'
     }
   ]
 })
