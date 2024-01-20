@@ -7,6 +7,7 @@
   "globals": {
     "$t": "readonly"
   },
+  "ignorePatterns": ["index.html"],
   "extends": [
     "plugin:vue/recommended",
     "@vue/standard"

@@ -1,30 +1,142 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="grid">
+    <header>
+      <vue-feather
+        type="menu"
+        @click="showMenu()"
+      />
+      <nav :class="['nav-content', showMobile ? 'open-menu' : 'closed-menu']">
+        <div class="logo">
+          Dusty Codes
+        </div>
+        <ul class="nav-items">
+          <li>
+            <router-link to="/skills">
+              Skills
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/portfolio">
+              Portfolio
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/about">
+              About
+            </router-link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Dustin Hershman</h1>
+        <span class="typed-text">
+          {{ typedText }}
+        </span>
+        <span class="blinking-cursor">|</span>
+      </section>
+      <router-view />
+    </main>
+    <footer>
+      <p>
+        Made With ❤️ by <a
+          class="link"
+          href="https://github.com/dhershman1"
+          target="_blank"
+        >Dustin Hershman</a>
+      </p>
+    </footer>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const showMobile = ref(false)
+const typedText = ref('')
+const isAdding = ref(true)
+const idx = ref(1)
+
+function showMenu () {
+  showMobile.value = !showMobile.value
+}
+
+function typeAnimation (textToType) {
+  setTimeout(function () {
+    // set the text of typeText to a substring of
+    // the textToType using idx.
+    typedText.value = textToType.slice(0, idx.value)
+    if (isAdding.value) {
+      // adding text
+      if (idx.value > textToType.length) {
+        // no more text to add
+        isAdding.value = false
+        // break: wait 2s before playing again
+        setTimeout(function () {
+          typeAnimation(textToType)
+        }, 2000)
+        return
+      } else {
+        // increment idx by 1
+        idx.value++
+      }
+    }
+    // call itself
+    typeAnimation(textToType)
+  }, 120)
+}
+onMounted(() => {
+  typeAnimation('Fullstack Software Engineer')
+})
+</script>
+
 <style scoped>
+main {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+i {
+  color: var(--white);
+  display: none;
+}
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  display: inline-block;
+  color: var(--accent);
+  font-size: 30px;
+  margin-left: 0.8rem;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.blinking-cursor {
+  font-size: 16px;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #2c3e50;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  i {
+    display: flex;
+    padding: 1rem;
+    justify-content: end;
+  }
 }
 </style>

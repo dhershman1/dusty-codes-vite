@@ -1,0 +1,24 @@
+.grid {
+  display: grid;
+  grid-template-areas: 'header'
+    'main'
+    'footer';
+  grid-template-rows: min-content 1fr min-content;
+  height: 100%;
+}
+
+header {
+  grid-area: header;
+  align-self: flex-start;
+}
+
+main {
+  grid-area: main;
+  padding: 2rem;
+}
+
+footer {
+  grid-area: footer;
+  justify-self: center;
+  align-self: flex-end;
+}
