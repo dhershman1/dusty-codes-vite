@@ -6,8 +6,7 @@ import Portfolio from './views/Portfolio.vue'
 
 const routes = [{
   path: '/',
-  name: 'about',
-  component: About
+  redirect: '/about'
 }, {
   path: '/about',
   name: 'about',
