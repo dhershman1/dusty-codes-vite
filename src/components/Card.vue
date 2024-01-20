@@ -1,0 +1,28 @@
+<template>
+  <div class="card">
+    <section class="card__actions">
+      <a
+        v-if="props.goToLink"
+        :href="props.goToLink"
+        targer="_blank"
+      >
+        <vue-feather type="external-link" />
+      </a>
+    </section>
+    <section class="card__main">
+      <slot name="main" />
+    </section>
+    <section class="card__text">
+      <slot name="text" />
+    </section>
+  </div>
+</template>
+
+<script setup>
+const props = defineProps({
+  goToLink: {
+    type: String,
+    required: false
+  }
+})
+</script>
