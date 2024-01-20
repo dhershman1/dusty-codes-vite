@@ -22,7 +22,8 @@
 const props = defineProps({
   goToLink: {
     type: String,
-    required: false
+    required: false,
+    default: ''
   }
 })
 </script>
