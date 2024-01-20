@@ -11,6 +11,11 @@
         </div>
         <ul class="nav-items">
           <li>
+            <router-link to="/about">
+              About
+            </router-link>
+          </li>
+          <li>
             <router-link to="/skills">
               Skills
             </router-link>
@@ -18,11 +23,6 @@
           <li>
             <router-link to="/portfolio">
               Portfolio
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/about">
-              About
             </router-link>
           </li>
         </ul>
