@@ -31,11 +31,16 @@
   padding: 1rem;
 }
 
+.portfolio .card__main {
+  grid-template-columns: 1fr;
+}
+
 .card__main img {
   max-width: 100px;
 }
 
 .card__text {
+  text-align: left;
   padding: 1rem;
   width: 100%;
 }
