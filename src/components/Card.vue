@@ -6,7 +6,7 @@
         :href="props.goToLink"
         target="_blank"
       >
-        <vue-feather type="external-link" />
+        <vue-feather :type="icon" />
       </a>
     </section>
     <section class="card__main">
@@ -24,6 +24,10 @@ const props = defineProps({
     type: String,
     required: false,
     default: ''
+  },
+  icon: {
+    type: String,
+    default: 'external-link'
   }
 })
 </script>
