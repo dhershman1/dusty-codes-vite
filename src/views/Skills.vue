@@ -57,6 +57,16 @@ const skills = computed(() => {
       link: 'https://www.python.org/',
       level: 'intermediate'
     }, {
+      name: 'React',
+      img: 'react.png',
+      link: 'https://react.dev/',
+      level: 'professional'
+    }, {
+      name: 'Vue',
+      img: 'vue.png',
+      link: 'https://vuejs.org',
+      level: 'professional'
+    }, {
       name: 'Elm',
       img: 'elm.png',
       link: 'https://elm-lang.org/',
@@ -65,6 +75,11 @@ const skills = computed(() => {
       name: 'PostgreSQL',
       img: 'postgres.png',
       link: 'https://www.postgresql.org/',
+      level: 'intermediate'
+    }, {
+      name: 'MySQL',
+      img: 'mysql.png',
+      link: 'https://www.mysql.com/',
       level: 'intermediate'
     }, {
       name: 'JSON',
