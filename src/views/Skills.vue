@@ -76,6 +76,11 @@ const skills = computed(() => {
       img: 'haskell.jpg',
       link: 'https://www.haskell.org/',
       level: 'novice'
+    }, {
+      name: 'Clojure',
+      img: 'clojure.png',
+      link: 'https://clojure.org/',
+      level: 'novice'
     }
   ]
 })
