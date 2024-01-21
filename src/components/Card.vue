@@ -4,7 +4,7 @@
       <a
         v-if="props.goToLink"
         :href="props.goToLink"
-        targer="_blank"
+        target="_blank"
       >
         <vue-feather type="external-link" />
       </a>
