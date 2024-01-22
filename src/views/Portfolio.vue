@@ -44,8 +44,8 @@ const projects = computed(() => {
       link: 'https://github.com/dhershman1/kyanite',
       icon: 'github',
       badges: [{
-        badge: 'https://img.shields.io/badge/Kyanite-Documentation-blue?style=flat-square',
-        link: 'https://kyanite.dusty.codes/'
+        badge: 'https://img.shields.io/github/stars/dhershman1/kyanite?style=flat-square',
+        link: 'https://github.com/dhershman1/vue-debounce'
       }, {
         badge: 'https://img.shields.io/npm/dm/kyanite.svg?style=flat-square',
         link: 'https://www.npmjs.com/package/kyanite'
@@ -61,6 +61,42 @@ const projects = computed(() => {
       }, {
         badge: 'https://img.shields.io/npm/dm/vue-debounce.svg?style=flat-square',
         link: 'https://www.npmjs.com/package/vue-debounce'
+      }]
+    }, {
+      name: 'Tap Junit',
+      summary: 'Silly small, silly easy junit output formatter for tap',
+      link: 'https://github.com/dhershman1/tap-junit',
+      icon: 'github',
+      badges: [{
+        badge: 'https://img.shields.io/github/stars/dhershman1/tap-junit?style=flat-square',
+        link: 'https://github.com/dhershman1/tap-junit'
+      }, {
+        badge: 'https://img.shields.io/npm/dm/tap-junit.svg?style=flat-square',
+        link: 'https://www.npmjs.com/package/tap-junit'
+      }]
+    }, {
+      name: 'Phone Fns',
+      summary: 'A small modern, and functional phone number library',
+      link: 'https://github.com/dhershman1/phone-fns',
+      icon: 'github',
+      badges: [{
+        badge: 'https://img.shields.io/github/stars/dhershman1/phone-fns?style=flat-square',
+        link: 'https://github.com/dhershman1/phone-fns'
+      }, {
+        badge: 'https://img.shields.io/npm/dm/phone-fns.svg?style=flat-square',
+        link: 'https://www.npmjs.com/package/phone-fns'
+      }]
+    }, {
+      name: 'Randoscando',
+      summary: 'A simple library for seed based predictable randomness.',
+      link: 'https://github.com/dhershman1/randoscando',
+      icon: 'github',
+      badges: [{
+        badge: 'https://img.shields.io/github/stars/dhershman1/randoscando?style=flat-square',
+        link: 'https://github.com/dhershman1/randoscando'
+      }, {
+        badge: 'https://img.shields.io/npm/dm/randoscando.svg?style=flat-square',
+        link: 'https://www.npmjs.com/package/randoscando'
       }]
     }
   ]
