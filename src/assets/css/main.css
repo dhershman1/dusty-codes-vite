@@ -45,11 +45,11 @@ p {
 }
 
 a {
-  color: var(--dark);
+  color: var(--accent);
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--lightgrey);
 }
 
 @media (prefers-color-scheme: light) {
@@ -59,6 +59,6 @@ a:hover {
   }
 
   a:hover {
-    color: var(--accent);
+    color: var(--dark);
   }
 }

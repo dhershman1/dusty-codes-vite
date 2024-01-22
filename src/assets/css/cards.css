@@ -10,8 +10,8 @@
     0 2px 2px 0 rgba(0, 0, 0, .14),
     0 1px 5px 0 rgba(0, 0, 0, .12);
   text-decoration: none;
-  background-color: var(--white);
-  border-color: var(--white);
+  background-color: var(--lightgrey);
+  border-color: var(--lightgrey);
   color: var(--jet);
   border-radius: 2px;
 }
@@ -40,13 +40,20 @@
 }
 
 .card__text {
-  text-align: left;
   padding: 1rem;
   width: 100%;
+}
+
+.portfolio .card__text {
+  text-align: left;
 }
 
 @media only screen and (max-width: 768px) {
   .card-container {
       grid-template-columns: 1fr;
     }
+}
+
+@media (prefers-color-scheme: light) {
+
 }
