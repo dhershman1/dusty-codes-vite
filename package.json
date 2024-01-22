@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "feather-icons": "^4.29.1",
     "vue": "^3.3.11",
     "vue-feather": "^2.0.0",

@@ -95,7 +95,6 @@ onMounted(() => {
 main {
   display: grid;
   justify-content: center;
-  text-align: center;
 }
 
 i {

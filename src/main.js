@@ -4,6 +4,7 @@ import VueFeather from 'vue-feather'
 import router from './router'
 import App from './App.vue'
 
+import 'animate.css'
 import './assets/css/main.css'
 import './assets/css/cards.css'
 import './assets/css/grid.css'

@@ -6,6 +6,7 @@
         v-for="(skill, i) in skills"
         :key="i"
         :go-to-link="skill.link"
+        class="animate__animated animate__fadeInRight"
       >
         <template #main>
           <div>
