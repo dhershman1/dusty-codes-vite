@@ -30,7 +30,9 @@
     </header>
     <main>
       <section>
-        <h1>Dustin Hershman</h1>
+        <h1 class="amatic-sc-bold">
+          Hi, I'm Dustin Hershman
+        </h1>
         <span class="typed-text">
           {{ typedText }}
         </span>
@@ -87,7 +89,7 @@ function typeAnimation (textToType) {
   }, 120)
 }
 onMounted(() => {
-  typeAnimation('Fullstack Software Engineer')
+  typeAnimation('A Fullstack Software Engineer')
 })
 </script>
 

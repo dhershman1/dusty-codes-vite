@@ -1,6 +1,8 @@
 <template>
   <section class="portfolio">
-    <h1>Portfolio</h1>
+    <h1 class="amatic-sc-bold">
+      Portfolio
+    </h1>
     <div class="card-container">
       <card
         v-for="(project, i) in projects"

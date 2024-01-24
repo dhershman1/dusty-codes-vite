@@ -1,6 +1,8 @@
 <template>
   <section>
-    <h1>Skills</h1>
+    <h1 class="amatic-sc-bold">
+      Skills
+    </h1>
     <div class="card-container">
       <card
         v-for="(skill, i) in skills"
