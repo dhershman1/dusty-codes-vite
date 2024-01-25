@@ -70,6 +70,7 @@ const translatedLevel = computed(() => {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  font-weight: bold;
 }
 
 .progress-circle__underlay {
@@ -96,8 +97,8 @@ const translatedLevel = computed(() => {
 }
 
 .novice {
-  color: rgb(43, 89, 148);
-  caret-color: rgb(43, 89, 148);
+  color: rgb(69, 134, 220);
+  caret-color: rgb(69, 134, 220);
 }
 
 .intermediate {
@@ -113,5 +114,12 @@ const translatedLevel = computed(() => {
 .expert {
   color: var(--accent);
   caret-color: var(--accent);
+}
+
+@media (prefers-color-scheme: light) {
+  .novice {
+    color: rgb(43, 89, 148);
+    caret-color: rgb(43, 89, 148);
+  }
 }
 </style>

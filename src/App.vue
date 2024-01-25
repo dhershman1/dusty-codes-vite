@@ -110,11 +110,9 @@ i {
   font-size: 30px;
   margin-left: 0.8rem;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
 
 .blinking-cursor {
+  color: var(--white);
   font-size: 16px;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
@@ -138,6 +136,12 @@ i {
     display: flex;
     padding: 1rem;
     justify-content: end;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .blinking-cursor {
+    color: var(--dark);
   }
 }
 </style>
