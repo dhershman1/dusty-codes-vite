@@ -29,7 +29,7 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="txt-center">
         <h1 class="amatic-sc-bold">
           Hi, I'm Dustin Hershman
         </h1>

@@ -1,6 +1,6 @@
 <template>
   <section class="portfolio">
-    <h2 class="amatic-sc-bold">
+    <h2 class="txt-center amatic-sc-bold">
       Portfolio
     </h2>
     <div class="card-container">

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2 class="amatic-sc-bold">
+    <h2 class="txt-center amatic-sc-bold">
       Skills
     </h2>
     <div class="card-container">

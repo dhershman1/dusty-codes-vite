@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <section class="txt-center about">
     <h2 class="amatic-sc-bold">
       About Me
     </h2>
