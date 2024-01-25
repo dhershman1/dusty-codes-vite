@@ -31,6 +31,10 @@
   padding: 1rem;
 }
 
+.card__main .card__img {
+  text-align: center;
+}
+
 .portfolio .card__main {
   grid-template-columns: 1fr;
 }

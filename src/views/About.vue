@@ -1,10 +1,11 @@
 <template>
-  <section>
+  <section class="about">
     <h2 class="amatic-sc-bold">
       About Me
     </h2>
     <p>Welcome to my personal site!</p>
-    <p>I'm a Functional Developer at heart, and my most used toolset/language is JavaScript. I've authored many cool and fun libraries for the language!</p>
+    <p>I'm a Functional Developer at heart, and my most used toolset/language is JavaScript. I've authored many cool and fun libraries for the language! </p>
+    <p>I love learning new things and putting them to use right away.</p>
     <p>Please take your time to checkout my skills and portfolio!</p>
     <div class="socials">
       <a
@@ -28,3 +29,9 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+.about p {
+  font-size: 16px;
+}
+</style>

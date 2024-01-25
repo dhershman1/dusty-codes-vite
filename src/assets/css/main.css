@@ -26,6 +26,10 @@ body {
   margin: 0;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 .amatic-sc-regular {
   font-family: "Amatic SC", Inter, system-ui, sans-serif;
   font-weight: 400;
@@ -81,6 +85,10 @@ a:hover {
 .socials {
   display: flex;
   gap: 1rem;
+}
+
+.txt-center {
+  text-align: center;
 }
 
 @media (prefers-color-scheme: light) {

@@ -11,7 +11,7 @@
         class="animate__animated animate__fadeInRight"
       >
         <template #main>
-          <div>
+          <div class="card__img">
             <img
               :alt="skill.name"
               :src="`/imgs/${skill.img}`"
@@ -20,7 +20,9 @@
           <progress-circle :level="skill.level" />
         </template>
         <template #text>
-          {{ skill.name }}
+          <div class="txt-center">
+            {{ skill.name }}
+          </div>
         </template>
       </card>
     </div>

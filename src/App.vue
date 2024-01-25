@@ -94,9 +94,9 @@ onMounted(() => {
 </script>
 
 <style scoped>
+
 main {
   display: grid;
-  justify-content: center;
 }
 
 i {
@@ -108,7 +108,6 @@ i {
   display: inline-block;
   color: var(--accent);
   font-size: 30px;
-  margin-left: 0.8rem;
 }
 
 .blinking-cursor {
