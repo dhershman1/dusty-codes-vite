@@ -52,8 +52,17 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  color: var(--accent);
+  margin: 0;
+}
+
 h1.amatic-sc-bold {
   font-size: 60px;
+}
+
+h2.amatic-sc-bold {
+  font-size: 50px;
 }
 
 p {
@@ -68,6 +77,11 @@ a:hover {
   color: var(--lightgrey);
 }
 
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--dark);
@@ -76,5 +90,15 @@ a:hover {
 
   a:hover {
     color: var(--dark);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1.amatic-sc-bold {
+    font-size: 40px;
+  }
+
+  h2.amatic-sc-bold {
+    font-size: 30px;
   }
 }
