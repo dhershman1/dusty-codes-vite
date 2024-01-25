@@ -53,7 +53,7 @@ h1 {
 }
 
 h2 {
-  color: var(--accent);
+  color: var(--dark);
   margin: 0;
 }
 
@@ -63,6 +63,7 @@ h1.amatic-sc-bold {
 
 h2.amatic-sc-bold {
   font-size: 50px;
+  color: var(--accent);
 }
 
 p {
