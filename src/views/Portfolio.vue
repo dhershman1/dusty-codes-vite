@@ -43,7 +43,7 @@ const projects = computed(() => {
   return [
     {
       name: 'Kyanite',
-      summary: 'A light weight functional JavaScript library that only depends on itself',
+      summary: 'A light weight functional JavaScript library that only depends on itself.',
       link: 'https://github.com/dhershman1/kyanite',
       icon: 'github',
       badges: [{
@@ -55,7 +55,7 @@ const projects = computed(() => {
       }]
     }, {
       name: 'Vue Debounce',
-      summary: 'A simple to use directive for debounce solutions',
+      summary: 'A simple to use directive for debounce solutions.',
       link: 'https://github.com/dhershman1/vue-debounce',
       icon: 'github',
       badges: [{
@@ -67,7 +67,7 @@ const projects = computed(() => {
       }]
     }, {
       name: 'Tap Junit',
-      summary: 'Silly small, silly easy junit output formatter for tap',
+      summary: 'Silly small, silly easy junit output formatter for tap.',
       link: 'https://github.com/dhershman1/tap-junit',
       icon: 'github',
       badges: [{
@@ -79,7 +79,7 @@ const projects = computed(() => {
       }]
     }, {
       name: 'Phone Fns',
-      summary: 'A small modern, and functional phone number library',
+      summary: 'A small, modern, and functional phone number library.',
       link: 'https://github.com/dhershman1/phone-fns',
       icon: 'github',
       badges: [{
