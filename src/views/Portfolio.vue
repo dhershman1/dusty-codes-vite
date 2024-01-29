@@ -9,7 +9,6 @@
         :key="i"
         :go-to-link="project.link"
         :icon="project.icon"
-        class="animate__animated animate__fadeInLeft"
       >
         <template #main>
           <div class="project-name">
