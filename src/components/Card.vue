@@ -1,7 +1,6 @@
 <template>
   <div
-    v-motion-pop-visible
-    class="card"
+    class="card media-item"
   >
     <section class="card__actions">
       <a
@@ -22,6 +21,34 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
+import { useMotion } from '@vueuse/motion'
+
+const animation = (i) => ({
+  initial: {
+    y: 30,
+    opacity: 0,
+    scale: 0.6
+  },
+  visibleOnce: {
+    y: 0,
+    opacity: 1,
+    scale: 1,
+    transition: {
+      type: 'spring',
+      delay: 50 * i
+    }
+  }
+})
+
+onMounted(() => {
+  const mediaItems = document.querySelectorAll('.media-item')
+
+  mediaItems.forEach((mediaItem, i) => {
+    useMotion(mediaItem, animation(i))
+  })
+})
+
 const props = defineProps({
   goToLink: {
     type: String,
