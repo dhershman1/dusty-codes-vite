@@ -117,7 +117,7 @@ const translatedLevel = computed(() => {
 }
 
 @media (prefers-color-scheme: light) {
-  .novice {
+  .expert {
     color: rgb(43, 89, 148);
     caret-color: rgb(43, 89, 148);
   }
