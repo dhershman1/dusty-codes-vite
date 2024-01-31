@@ -96,7 +96,7 @@ const translatedLevel = computed(() => {
   z-index: 0;
 }
 
-.novice {
+.expert {
   color: rgb(69, 134, 220);
   caret-color: rgb(69, 134, 220);
 }
@@ -111,7 +111,7 @@ const translatedLevel = computed(() => {
   caret-color: rgb(76, 175, 80);
 }
 
-.expert {
+.novice {
   color: var(--accent);
   caret-color: var(--accent);
 }
