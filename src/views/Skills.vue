@@ -47,7 +47,7 @@ const skills = computed(() => {
       level: 'expert'
     }, {
       name: 'CSS',
-      img: 'css.jpg',
+      img: 'css.png',
       link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
       level: 'professional'
     }, {
@@ -92,7 +92,7 @@ const skills = computed(() => {
       level: 'expert'
     }, {
       name: 'Haskell',
-      img: 'haskell.jpg',
+      img: 'haskell.png',
       link: 'https://www.haskell.org/',
       level: 'novice'
     }, {
