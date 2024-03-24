@@ -6,6 +6,7 @@
   --dark-accent: hsl(8, 49%, 51%);
   --shadow: hsla(0, 0%, 0%, 0.13);
   --lightgrey: hsl(60, 3%, 93%);
+  --timeline: hsl(0, 0%, 86%);
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

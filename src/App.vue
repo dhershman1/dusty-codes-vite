@@ -16,6 +16,11 @@
             </router-link>
           </li>
           <li>
+            <router-link to="/experience">
+              Experience
+            </router-link>
+          </li>
+          <li>
             <router-link to="/skills">
               Skills
             </router-link>

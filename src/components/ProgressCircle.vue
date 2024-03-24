@@ -46,7 +46,7 @@ const translatedLevel = computed(() => {
   const offsets = {
     expert: 0,
     professional: 25,
-    intermediate: 50,
+    intermediate: 55,
     novice: 75
   }
 

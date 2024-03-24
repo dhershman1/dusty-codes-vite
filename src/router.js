@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import About from './views/About.vue'
 import Skills from './views/Skills.vue'
 import Portfolio from './views/Portfolio.vue'
+import Experience from './views/Experience.vue'
 
 const routes = [{
   path: '/',
@@ -19,6 +20,10 @@ const routes = [{
   path: '/portfolio',
   name: 'portfolio',
   component: Portfolio
+}, {
+  path: '/experience',
+  name: 'experience',
+  component: Experience
 }]
 
 const router = createRouter({

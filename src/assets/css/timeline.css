@@ -1,0 +1,116 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.is-small {
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+.timeline-item {
+  display: flex;
+  width: 50%;
+  align-self: flex-end;
+  flex-direction: row;
+  position: relative;
+  margin-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  display: block;
+  background-color: var(--timeline);
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: -.5px;
+  top: 0;
+}
+
+.timeline-item:nth-of-type(2n+1)::before {
+  content: '';
+  display: block;
+  background-color: var(--timeline);
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.timeline-item:nth-of-type(2n) {
+  align-self: flex-start;
+  flex-direction: row-reverse;
+  margin-left: 0;
+  margin-right: 2em;
+}
+
+.timeline-item:nth-of-type(2n)::before {
+  right: -.5px;
+  left: auto;
+}
+
+.timeline-item:nth-of-type(2n) .timeline-content {
+  padding: 0.5rem 2rem 0 0;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-basis: 100%;
+}
+
+.timeline-marker {
+  position: absolute;
+  background: var(--timeline);
+  border: 1px solid var(--timeline);
+  border-radius: 100%;
+  content: '';
+  display: block;
+  transform: translateX(-50%);
+  height: 16px;
+  top: 1.2rem;
+  width: 16px;
+}
+
+.timeline-item:nth-of-type(2n) .timeline-marker {
+  transform: translateX(50%);
+}
+
+.timeline-marker .vue-feather {
+  position: absolute;
+  left: 0.09rem;
+  top: 0.09rem;
+  color: var(--jet);
+}
+
+.timeline-content {
+  padding: 0.5rem 0 0 1rem;
+}
+
+.timeline-content .heading {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+@media (prefers-color-scheme: light) {
+  .timeline-marker .vue-feather {
+    color: var(--timeline)
+  }
+
+  .timeline-marker {
+    background: var(--jet);
+    border-color: var(--jet);
+  }
+
+  .timeline-item:nth-of-type(2n+1)::before {
+    background-color: var(--jet);
+  }
+
+  .timeline-item::before {
+    background-color: var(--jet);
+  }
+}

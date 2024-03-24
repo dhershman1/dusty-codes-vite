@@ -36,15 +36,20 @@ import ProgressCircle from '../components/ProgressCircle.vue'
 const skills = computed(() => {
   return [
     {
-      name: 'HTML',
-      img: 'html.png',
-      link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-      level: 'professional'
+      name: 'JSON',
+      img: 'json.png',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON',
+      level: 'expert'
     }, {
       name: 'JavaScript',
       img: 'js.jpg',
       link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
       level: 'expert'
+    }, {
+      name: 'HTML',
+      img: 'html.png',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+      level: 'professional'
     }, {
       name: 'CSS',
       img: 'css.png',
@@ -56,11 +61,6 @@ const skills = computed(() => {
       link: 'https://nodejs.org/',
       level: 'professional'
     }, {
-      name: 'Python',
-      img: 'python.png',
-      link: 'https://www.python.org/',
-      level: 'intermediate'
-    }, {
       name: 'React',
       img: 'react.png',
       link: 'https://react.dev/',
@@ -71,9 +71,19 @@ const skills = computed(() => {
       link: 'https://vuejs.org',
       level: 'professional'
     }, {
+      name: 'Python',
+      img: 'python.png',
+      link: 'https://www.python.org/',
+      level: 'intermediate'
+    }, {
       name: 'Elm',
       img: 'elm.png',
       link: 'https://elm-lang.org/',
+      level: 'intermediate'
+    }, {
+      name: 'Typescript',
+      img: 'typescript.png',
+      link: 'https://www.typescriptlang.org/',
       level: 'intermediate'
     }, {
       name: 'PostgreSQL',
@@ -86,10 +96,10 @@ const skills = computed(() => {
       link: 'https://www.mysql.com/',
       level: 'intermediate'
     }, {
-      name: 'JSON',
-      img: 'json.png',
-      link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON',
-      level: 'expert'
+      name: 'AWS',
+      img: 'aws.png',
+      link: 'https://aws.amazon.com/',
+      level: 'novice'
     }, {
       name: 'Haskell',
       img: 'haskell.png',
