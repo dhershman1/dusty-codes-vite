@@ -36,14 +36,14 @@ import ProgressCircle from '../components/ProgressCircle.vue'
 const skills = computed(() => {
   return [
     {
-      name: 'JSON',
-      img: 'json.png',
-      link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON',
-      level: 'expert'
-    }, {
       name: 'JavaScript',
       img: 'js.jpg',
       link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+      level: 'expert'
+    }, {
+      name: 'JSON',
+      img: 'json.png',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON',
       level: 'expert'
     }, {
       name: 'HTML',
