@@ -38,7 +38,7 @@ import { computed } from 'vue'
 const props = defineProps({
   level: {
     type: String,
-    default: 'novice'
+    default: 'studying'
   }
 })
 
@@ -47,7 +47,7 @@ const translatedLevel = computed(() => {
     expert: 0,
     professional: 25,
     intermediate: 55,
-    novice: 75
+    studying: 75
   }
 
   return offsets[props.level]
@@ -111,7 +111,7 @@ const translatedLevel = computed(() => {
   caret-color: rgb(76, 175, 80);
 }
 
-.novice {
+.studying {
   color: var(--accent);
   caret-color: var(--accent);
 }

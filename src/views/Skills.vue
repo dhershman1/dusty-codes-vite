@@ -99,17 +99,17 @@ const skills = computed(() => {
       name: 'AWS',
       img: 'aws.png',
       link: 'https://aws.amazon.com/',
-      level: 'novice'
+      level: 'studying'
     }, {
       name: 'Haskell',
       img: 'haskell.png',
       link: 'https://www.haskell.org/',
-      level: 'novice'
+      level: 'studying'
     }, {
       name: 'Clojure',
       img: 'clojure.png',
       link: 'https://clojure.org/',
-      level: 'novice'
+      level: 'studying'
     }
   ]
 })
