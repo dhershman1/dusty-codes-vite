@@ -52,7 +52,7 @@
 }
 
 .timeline-item:nth-of-type(2n) .timeline-content {
-  padding: 0.5rem 2rem 0 0;
+  padding: 0.5rem 1rem 0 0;
   text-align: right;
   display: flex;
   flex-direction: column;
