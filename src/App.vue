@@ -26,8 +26,8 @@
             </router-link>
           </li>
           <li>
-            <router-link to="/portfolio">
-              Portfolio
+            <router-link to="/projects">
+              Projects
             </router-link>
           </li>
         </ul>
