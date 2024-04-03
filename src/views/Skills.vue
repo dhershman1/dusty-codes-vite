@@ -3,9 +3,12 @@
     <h2 class="txt-center amatic-sc-bold">
       Skills
     </h2>
-    <div class="card-container">
+    <div
+      v-if="!loading"
+      class="card-container"
+    >
       <card
-        v-for="(skill, i) in skills"
+        v-for="(skill, i) in dbSkills"
         :key="i"
         :go-to-link="skill.link"
       >
@@ -13,7 +16,7 @@
           <div class="card__img">
             <img
               :alt="skill.name"
-              :src="`/imgs/${skill.img}`"
+              :src="skill.img"
             >
           </div>
           <progress-circle :level="skill.level" />
@@ -25,92 +28,119 @@
         </template>
       </card>
     </div>
+    <div
+      v-else
+      class="card-container"
+    >
+      <vue-feather
+        type="settings"
+        animation="spin"
+      />
+    </div>
   </section>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import Card from '../components/Card.vue'
 import ProgressCircle from '../components/ProgressCircle.vue'
+import { supabase } from '../lib/supabaseClient.js'
+
+const dbSkills = ref([])
+const loading = ref(false)
 
 const skills = computed(() => {
   return [
     {
       name: 'JavaScript',
-      img: 'js.jpg',
+      img: '/imgs/js.jpg',
       link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
       level: 'expert'
     }, {
       name: 'JSON',
-      img: 'json.png',
+      img: '/imgs/json.png',
       link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON',
       level: 'expert'
     }, {
       name: 'HTML',
-      img: 'html.png',
+      img: '/imgs/html.png',
       link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
       level: 'professional'
     }, {
       name: 'CSS',
-      img: 'css.png',
+      img: '/imgs/css.png',
       link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
       level: 'professional'
     }, {
       name: 'Node.js',
-      img: 'node.png',
+      img: '/imgs/node.png',
       link: 'https://nodejs.org/',
       level: 'professional'
     }, {
       name: 'React',
-      img: 'react.png',
+      img: '/imgs/react.png',
       link: 'https://react.dev/',
       level: 'professional'
     }, {
       name: 'Vue',
-      img: 'vue.png',
+      img: '/imgs/vue.png',
       link: 'https://vuejs.org',
       level: 'professional'
     }, {
       name: 'Python',
-      img: 'python.png',
+      img: '/imgs/python.png',
       link: 'https://www.python.org/',
       level: 'intermediate'
     }, {
       name: 'Elm',
-      img: 'elm.png',
+      img: '/imgs/elm.png',
       link: 'https://elm-lang.org/',
       level: 'intermediate'
     }, {
       name: 'Typescript',
-      img: 'typescript.png',
+      img: '/imgs/typescript.png',
       link: 'https://www.typescriptlang.org/',
       level: 'intermediate'
     }, {
       name: 'PostgreSQL',
-      img: 'postgres.png',
+      img: '/imgs/postgres.png',
       link: 'https://www.postgresql.org/',
       level: 'intermediate'
     }, {
       name: 'MySQL',
-      img: 'mysql.png',
+      img: '/imgs/mysql.png',
       link: 'https://www.mysql.com/',
       level: 'intermediate'
     }, {
       name: 'AWS',
-      img: 'aws.png',
+      img: '/imgs/aws.png',
       link: 'https://aws.amazon.com/',
       level: 'studying'
     }, {
       name: 'Haskell',
-      img: 'haskell.png',
+      img: '/imgs/haskell.png',
       link: 'https://www.haskell.org/',
       level: 'studying'
     }, {
       name: 'Clojure',
-      img: 'clojure.png',
+      img: '/imgs/clojure.png',
       link: 'https://clojure.org/',
       level: 'studying'
     }
   ]
+})
+
+async function getSkills () {
+  const { data } = await supabase.from('skills')
+    .select('name,img,link,level')
+    .order('level', { ascending: true })
+
+  dbSkills.value = data
+  loading.value = false
+}
+
+onMounted(() => {
+  loading.value = true
+  getSkills()
 })
 </script>

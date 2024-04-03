@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.41.1",
     "@vueuse/motion": "^2.0.0",
     "feather-icons": "^4.29.1",
     "vue": "^3.3.11",
