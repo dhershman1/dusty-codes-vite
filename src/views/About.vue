@@ -3,10 +3,19 @@
     <h2 class="amatic-sc-bold">
       About Me
     </h2>
-    <p>Welcome to my personal site!</p>
-    <p>I'm a Functional Developer at heart, and my most used toolset/language is JavaScript. I've authored many cool and fun libraries for the language! </p>
-    <p>I love learning new things and putting them to use right away.</p>
-    <p>Please take your time to checkout my skills and portfolio!</p>
+    <div class="about__text">
+      <article>
+        <p>Welcome to my personal site!</p>
+        <p>
+          I've had a passion for programming after teaching myself a little bit of Java for Runescape bots and private
+          servers, all with the power of Notepad! From there the rest is history and I've loved writing code ever since.
+        </p>
+        <p>
+          I currently spend most of my time working in Node.js, JavaScript, and Python, but I'm always wanting to learn more! My interests include API design, writing clean and quality code, and functional programming
+        </p>
+        <p>Please take your time to checkout my skills and projects!</p>
+      </article>
+    </div>
     <div class="socials">
       <a
         href="https://twitter.com/sirdugs"
@@ -21,7 +30,7 @@
         <vue-feather type="github" />
       </a>
       <a
-        href="https://www.linkedin.com/in/dustin-hershman-938953101/"
+        href="https://www.linkedin.com/in/dustin-hershman/"
         target="_blank"
       >
         <vue-feather type="linkedin" />
@@ -31,7 +40,22 @@
 </template>
 
 <style scoped>
+.about__text {
+  display: grid;
+}
+
+.about__text article {
+  width: 50%;
+  justify-self: center;
+}
+
 .about p {
   font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__text article {
+    width: 100%;
+  }
 }
 </style>
