@@ -7,7 +7,9 @@
       />
       <nav :class="['nav-content', showMobile ? 'open-menu' : 'closed-menu']">
         <div class="logo">
-          Dusty Codes
+          <router-link to="/about">
+            Dusty Codes
+          </router-link>
         </div>
         <ul class="nav-items">
           <li>
