@@ -11,7 +11,8 @@
           servers, all with the power of Notepad! From there the rest is history and I've loved writing code ever since.
         </p>
         <p>
-          I currently spend most of my time working in Node.js, JavaScript, and Python, but I'm always wanting to learn more! My interests include API design, writing clean and quality code, and functional programming
+          I currently spend most of my time working in Node.js, JavaScript, and Python, but I'm always wanting to learn
+          more! My interests include API design, writing clean and quality code, and functional programming
         </p>
         <p>Please take your time to checkout my skills and projects!</p>
       </article>
@@ -34,6 +35,9 @@
         target="_blank"
       >
         <vue-feather type="linkedin" />
+      </a>
+      <a href="mailto:dustinh17@gmail.com">
+        <vue-feather type="mail" />
       </a>
     </div>
   </section>
