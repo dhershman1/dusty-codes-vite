@@ -50,6 +50,16 @@
   </div>
 </template>
 
+<script setup>
+import { ref } from 'vue'
+
+const showMobile = ref(false)
+
+function showMenu () {
+  showMobile.value = !showMobile.value
+}
+</script>
+
 <style scoped>
 
 main {
