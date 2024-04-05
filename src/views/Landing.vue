@@ -14,12 +14,23 @@
         {{ typedText }}
       </span>
       <span class="blinking-cursor">|</span>
+      <div class="landing__cta">
+        <a
+          href="https://www.npmjs.com/~killparadise"
+          target="_blank"
+          class="btn btn__primary btn--lg"
+        >
+          Check out my open source work
+        </a>
+      </div>
+      <socials />
     </div>
   </section>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import Socials from '../components/Socials.vue'
 
 const typedText = ref('')
 const isAdding = ref(true)
@@ -57,6 +68,7 @@ onMounted(() => {
 <style scoped>
 
 figure img {
+  height: auto;
   max-width: 100%;
 }
 
@@ -67,6 +79,11 @@ figure img {
 
 .landing__title {
   align-self: center;
+}
+
+.landing__cta {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .typed-text {
