@@ -2,6 +2,7 @@
   --white: hsl(0, 0%, 100%);
   --jet: hsl(120, 1%, 17%);
   --dark: hsl(208, 37%, 20%);
+  --secondary: hsl(245, 17%, 29%);
   --accent: hsl(0, 100%, 69%);
   --dark-accent: hsl(8, 49%, 51%);
   --shadow: hsla(0, 0%, 0%, 0.13);
@@ -80,6 +81,10 @@ a {
 }
 
 a:hover {
+  color: var(--lightgrey);
+}
+
+.logo a:hover {
   color: var(--lightgrey);
 }
 
