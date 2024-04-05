@@ -2,7 +2,7 @@
   <section class="landing txt-center">
     <figure class="landing__image">
       <img
-        alt=""
+        alt="progessive-app"
         src="/svgs/progressive-app.svg"
       >
     </figure>
@@ -55,6 +55,10 @@ onMounted(() => {
 </script>
 
 <style scoped>
+
+figure img {
+  max-width: 100%;
+}
 
 .landing {
   display: grid;
