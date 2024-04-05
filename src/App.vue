@@ -7,7 +7,7 @@
       />
       <nav :class="['nav-content', showMobile ? 'open-menu' : 'closed-menu']">
         <div class="logo">
-          <router-link to="/about">
+          <router-link to="/">
             Dusty Codes
           </router-link>
         </div>
