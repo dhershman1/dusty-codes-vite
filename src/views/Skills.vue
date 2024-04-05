@@ -3,6 +3,9 @@
     <h2 class="txt-center amatic-sc-bold">
       Skills
     </h2>
+    <figure>
+      <img src="/svgs/percents.svg">
+    </figure>
     <div class="card-container">
       <card
         v-for="(skill, i) in skills"
@@ -114,3 +117,25 @@ const skills = computed(() => {
   ]
 })
 </script>
+
+<style scoped>
+figure {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+figure img {
+  height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  figure {
+    margin: 0
+  }
+
+  figure img {
+    width: 300px;
+  }
+}
+</style>

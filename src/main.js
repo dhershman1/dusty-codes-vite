@@ -10,6 +10,7 @@ import './assets/css/cards.css'
 import './assets/css/grid.css'
 import './assets/css/nav.css'
 import './assets/css/timeline.css'
+import './assets/css/button.css'
 
 const app = createApp(App)
 

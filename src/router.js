@@ -4,10 +4,15 @@ import About from './views/About.vue'
 import Skills from './views/Skills.vue'
 import Portfolio from './views/Portfolio.vue'
 import Experience from './views/Experience.vue'
+import Landing from './views/Landing.vue'
 
 const routes = [{
   path: '/',
-  redirect: '/about'
+  name: 'home',
+  component: Landing,
+  meta: {
+    title: 'Dusty Codes - Home'
+  }
 }, {
   path: '/about',
   name: 'about',
