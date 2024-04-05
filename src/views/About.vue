@@ -10,7 +10,7 @@
       <article>
         <p>Welcome to my personal site!</p>
         <p>
-          I've had a passion for programming after teaching myself a little bit of Java for Runescape bots and private
+          I've had a love for programming after teaching myself a little bit of Java for Runescape bots and private
           servers, all with the power of Notepad! From there the rest is history and I've loved writing code ever since.
         </p>
         <p>
