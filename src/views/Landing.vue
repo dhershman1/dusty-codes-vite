@@ -1,6 +1,12 @@
 <template>
-  <section class="heading txt-center">
-    <div class="heading__title">
+  <section class="landing txt-center">
+    <figure class="landing__image">
+      <img
+        alt=""
+        src="/svgs/progressive-app.svg"
+      >
+    </figure>
+    <div class="landing__title">
       <h1 class="amatic-sc-bold">
         Hi, I'm Dustin Hershman
       </h1>
@@ -50,15 +56,13 @@ onMounted(() => {
 
 <style scoped>
 
-.heading {
+.landing {
   display: grid;
+  grid-template-columns: 70% 30%;
 }
 
-.heading__title {
-  width: 50%;
-  justify-self: center;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid var(--accent);
+.landing__title {
+  align-self: center;
 }
 
 .typed-text {
@@ -94,8 +98,23 @@ onMounted(() => {
 }
 
 @media screen and (max-width: 768px) {
-  .heading__title {
-    width: 100%;
+  figure {
+    margin: 0;
+  }
+
+  .landing {
+    grid-template-rows: 1fr min-content;
+    grid-template-columns: none;
+    gap: 0;
+  }
+
+  .landing__title {
+    align-self: flex-start;
+  }
+
+  .landing__image img {
+    height: 300px;
+    width: 300px;
   }
 }
 </style>

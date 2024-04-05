@@ -3,6 +3,9 @@
     <h2 class="amatic-sc-bold">
       About Me
     </h2>
+    <figure class="about__image">
+      <img src="/svgs/code-review.svg">
+    </figure>
     <div class="about__text">
       <article>
         <p>Welcome to my personal site!</p>
@@ -44,6 +47,14 @@
 </template>
 
 <style scoped>
+figure {
+  margin: 0;
+}
+
+figure img {
+  height: 300px;
+}
+
 .about__text {
   display: grid;
 }
@@ -58,6 +69,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  figure {
+    margin: 0
+  }
+
+  figure img {
+    width: 300px;
+  }
+
   .about__text article {
     width: 100%;
   }
