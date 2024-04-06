@@ -1,7 +1,7 @@
 <template>
   <section class="portfolio">
     <h2 class="txt-center amatic-sc-bold">
-      Libraries
+      Projects
     </h2>
     <div class="card-container">
       <card
@@ -99,6 +99,18 @@ const projects = computed(() => {
       }, {
         badge: 'https://img.shields.io/npm/dm/randoscando.svg?style=flat-square',
         link: 'https://www.npmjs.com/package/randoscando'
+      }]
+    }, {
+      name: 'Vue Color Detect',
+      summary: 'A simple hook for detecting the color scheme a users browser is in.',
+      link: 'https://github.com/dhershman1/vue-color-detect',
+      icon: 'github',
+      badges: [{
+        badge: 'https://img.shields.io/github/stars/dhershman1/vue-color-detect?style=flat-square',
+        link: 'https://github.com/dhershman1/vue-color-detect'
+      }, {
+        badge: 'https://img.shields.io/npm/dm/vue-color-detect.svg?style=flat-square',
+        link: 'https://www.npmjs.com/package/vue-color-detect'
       }]
     }
   ]

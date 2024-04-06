@@ -28,8 +28,8 @@
             </router-link>
           </li>
           <li>
-            <router-link to="/libraries">
-              Libraries
+            <router-link to="/projects">
+              Projects
             </router-link>
           </li>
         </ul>

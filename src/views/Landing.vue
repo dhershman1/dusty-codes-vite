@@ -3,7 +3,7 @@
     <figure class="landing__image">
       <img
         alt="progessive-app"
-        src="/svgs/progressive-app.svg"
+        :src="svg"
       >
     </figure>
     <div class="landing__title">
@@ -29,12 +29,21 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { computed, ref, onMounted } from 'vue'
 import Socials from '../components/Socials.vue'
+import useDetectColorScheme from 'vue-color-detect'
 
 const typedText = ref('')
 const isAdding = ref(true)
 const idx = ref(1)
+const schemeMode = useDetectColorScheme()
+const svg = computed(() => {
+  if (schemeMode.value === 'LIGHT') {
+    return '/svgs/progressive-app.svg'
+  }
+
+  return '/svgs/progressive-app-dark.svg'
+})
 
 function typeAnimation (textToType) {
   setTimeout(function () {
@@ -60,6 +69,7 @@ function typeAnimation (textToType) {
     typeAnimation(textToType)
   }, 120)
 }
+
 onMounted(() => {
   typeAnimation('A Fullstack Software Engineer')
 })

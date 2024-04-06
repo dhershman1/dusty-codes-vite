@@ -28,11 +28,11 @@ const routes = [{
     title: 'Dusty Codes - Skills'
   }
 }, {
-  path: '/libraries',
-  name: 'Libraries',
+  path: '/projects',
+  name: 'Projects',
   component: Portfolio,
   meta: {
-    title: 'Dusty Codes - Libraries'
+    title: 'Dusty Codes - Projects'
   }
 }, {
   path: '/experience',
