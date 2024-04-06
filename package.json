@@ -1,7 +1,7 @@
 {
   "name": "dusty-codes-vite",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,6 +12,7 @@
     "@vueuse/motion": "^2.0.0",
     "feather-icons": "^4.29.1",
     "vue": "^3.3.11",
+    "vue-color-detect": "^1.0.1",
     "vue-feather": "^2.0.0",
     "vue-router": "^4.2.5"
   },
