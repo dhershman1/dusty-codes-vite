@@ -99,6 +99,11 @@ const skills = computed(() => {
       link: 'https://www.mysql.com/',
       level: 'intermediate'
     }, {
+      name: 'Golang',
+      img: 'go.png',
+      link: 'https://go.dev/',
+      level: 'studying'
+    }, {
       name: 'AWS',
       img: 'aws.png',
       link: 'https://aws.amazon.com/',
