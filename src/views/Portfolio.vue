@@ -1,26 +1,26 @@
 <template>
   <section class="portfolio">
     <h2 class="txt-center amatic-sc-bold">
-      Projects
+      Libraries
     </h2>
     <div class="card-container">
       <card
-        v-for="(project, i) in projects"
+        v-for="(lib, i) in projects"
         :key="i"
-        :go-to-link="project.link"
-        :icon="project.icon"
+        :go-to-link="lib.link"
+        :icon="lib.icon"
       >
         <template #main>
           <div class="project-name">
-            <h2>{{ project.name }}</h2>
+            <h2>{{ lib.name }}</h2>
             <p class="summary">
-              {{ project.summary }}
+              {{ lib.summary }}
             </p>
           </div>
         </template>
         <template #text>
           <a
-            v-for="(b, j) in project.badges"
+            v-for="(b, j) in lib.badges"
             :key="j"
             :href="b.link"
             target="_blank"
