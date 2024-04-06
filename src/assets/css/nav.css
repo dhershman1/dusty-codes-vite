@@ -1,10 +1,10 @@
 header {
-  background-color: var(--jet);
+  background-color: var(--lightgrey);
   opacity: .8;
 }
 
 .nav-items a {
-  color: var(--lightgrey);
+  color: var(--jet);
 }
 
 .nav-items a:hover {
@@ -13,7 +13,7 @@ header {
 }
 
 .nav-menu {
-  background-color: white;
+  background-color: var(--white);
 }
 
 .nav-content {
@@ -35,6 +35,16 @@ header {
 
 .nav-items li {
   padding: 0 10px;
+}
+
+@media (prefers-color-scheme: light) {
+  header {
+    background-color: var(--jet);
+  }
+
+  .nav-items a {
+    color: var(--lightgrey);
+  }
 }
 
 @media screen and (max-width: 768px) {
