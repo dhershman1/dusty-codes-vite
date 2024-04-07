@@ -101,7 +101,6 @@ figure img {
 }
 
 .blinking-cursor {
-  color: var(--white);
   font-size: 18px;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
@@ -114,17 +113,11 @@ figure img {
 
   from,
   to {
-    color: transparent;
+    color: var(--lightgrey);
   }
 
   50% {
-    color: #2c3e50;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .blinking-cursor {
-    color: var(--dark);
+    color: var(--jet);
   }
 }
 
