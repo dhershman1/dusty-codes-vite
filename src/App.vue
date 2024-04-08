@@ -61,6 +61,9 @@ function showMenu () {
 </script>
 
 <style scoped>
+.blinking-cursor {
+  color: var(--lightgrey);
+}
 
 main {
   display: grid;
@@ -77,6 +80,10 @@ i {
   font-size: 30px;
 }
 
+.vue-feather--menu {
+  color: var(--jet);
+}
+
 @media screen and (max-width: 768px) {
   i {
     display: flex;
@@ -88,6 +95,10 @@ i {
 @media (prefers-color-scheme: light) {
   .blinking-cursor {
     color: var(--dark);
+  }
+
+  .vue-feather--menu {
+    color: var(--white);
   }
 }
 </style>

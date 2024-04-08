@@ -85,7 +85,7 @@ a:hover {
 }
 
 .logo a:hover {
-  color: var(--lightgrey);
+  color: var(--dark);
 }
 
 .socials {
@@ -106,6 +106,10 @@ a:hover {
 
   a:hover {
     color: var(--dark);
+  }
+
+  .logo a:hover {
+    color: var(--lightgrey);
   }
 
   h2 {
