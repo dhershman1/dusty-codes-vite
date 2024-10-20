@@ -10,6 +10,13 @@
       >
         <vue-feather :type="icon" />
       </a>
+      <a
+        v-if="props.docLink"
+        :href="props.docLink"
+        target="_blank"
+      >
+        <vue-feather type="book-open" />
+      </a>
     </section>
     <section class="card__main">
       <slot name="main" />
@@ -51,6 +58,11 @@ onMounted(() => {
 
 const props = defineProps({
   goToLink: {
+    type: String,
+    required: false,
+    default: ''
+  },
+  docLink: {
     type: String,
     required: false,
     default: ''
