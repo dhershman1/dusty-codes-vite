@@ -8,6 +8,7 @@
         v-for="(lib, i) in projects"
         :key="i"
         :go-to-link="lib.link"
+        :doc-link="lib.doc"
         :icon="lib.icon"
       >
         <template #main>
@@ -44,6 +45,7 @@ const projects = computed(() => {
       name: 'Kyanite',
       summary: 'A light weight functional JavaScript library that only depends on itself.',
       link: 'https://github.com/dhershman1/kyanite',
+      doc: 'https://kyanite.dusty.codes',
       icon: 'github',
       badges: [{
         badge: 'https://img.shields.io/github/stars/dhershman1/kyanite?style=flat-square',
@@ -80,6 +82,7 @@ const projects = computed(() => {
       name: 'Phone Fns',
       summary: 'A small, modern, and functional phone number library.',
       link: 'https://github.com/dhershman1/phone-fns',
+      doc: 'https://phone-fns.dusty.codes',
       icon: 'github',
       badges: [{
         badge: 'https://img.shields.io/github/stars/dhershman1/phone-fns?style=flat-square',
@@ -92,6 +95,7 @@ const projects = computed(() => {
       name: 'Randoscando',
       summary: 'A simple library for seed based predictable randomness.',
       link: 'https://github.com/dhershman1/randoscando',
+      doc: 'https://randoscando.dusty.codes',
       icon: 'github',
       badges: [{
         badge: 'https://img.shields.io/github/stars/dhershman1/randoscando?style=flat-square',
