@@ -23,6 +23,15 @@
           Check out my open source work
         </a>
       </div>
+      <div class="resume__link">
+        <a
+          href="/main_resume.pdf"
+          target="_blank"
+          class="btn btn__secondary btn--lg"
+        >
+          View my resume
+        </a>
+      </div>
       <socials />
     </div>
   </section>
@@ -33,9 +42,9 @@ import { computed, ref, onMounted } from 'vue'
 import Socials from '../components/Socials.vue'
 import useDetectColorScheme from 'vue-color-detect'
 
+let idx = 1
+let isAdding = true
 const typedText = ref('')
-const isAdding = ref(true)
-const idx = ref(1)
 const schemeMode = useDetectColorScheme()
 const svg = computed(() => {
   if (schemeMode.value === 'LIGHT') {
@@ -49,12 +58,12 @@ function typeAnimation (textToType) {
   setTimeout(function () {
     // set the text of typeText to a substring of
     // the textToType using idx.
-    typedText.value = textToType.slice(0, idx.value)
-    if (isAdding.value) {
+    typedText.value = textToType.slice(0, idx)
+    if (isAdding) {
       // adding text
-      if (idx.value > textToType.length) {
+      if (idx > textToType.length) {
         // no more text to add
-        isAdding.value = false
+        isAdding = false
         // break: wait 2s before playing again
         setTimeout(function () {
           typeAnimation(textToType)
@@ -62,7 +71,7 @@ function typeAnimation (textToType) {
         return
       } else {
         // increment idx by 1
-        idx.value++
+        idx++
       }
     }
     // call itself
@@ -80,6 +89,10 @@ onMounted(() => {
 figure img {
   height: auto;
   max-width: 100%;
+}
+
+.resume__link {
+  margin-bottom: 1rem;
 }
 
 .landing {
