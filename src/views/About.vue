@@ -27,13 +27,8 @@
         View my resume
       </a>
     </div>
-    <socials />
   </section>
 </template>
-
-<script setup>
-import Socials from '../components/Socials.vue'
-</script>
 
 <style scoped>
 figure {
@@ -50,7 +45,6 @@ figure img {
 
 .resume__link {
   margin-top: 1rem;
-  margin-bottom: 2rem;
 }
 
 .about__text article {

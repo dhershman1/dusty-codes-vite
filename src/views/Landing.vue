@@ -32,14 +32,12 @@
           View my resume
         </a>
       </div>
-      <socials />
     </div>
   </section>
 </template>
 
 <script setup>
 import { computed, ref, onMounted } from 'vue'
-import Socials from '../components/Socials.vue'
 import useDetectColorScheme from 'vue-color-detect'
 
 let idx = 1
