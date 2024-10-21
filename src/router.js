@@ -18,7 +18,10 @@ const routes = [{
   name: 'about',
   component: About,
   meta: {
-    title: 'Dusty Codes - About'
+    title: 'Dusty Codes - About',
+    description: 'Dusty Codes is a personal portfolio website of a software engineer, Dustin Hershman. Dustin is a full-stack developer with experience in JavaScript, Node.js, React, Vue, and more.',
+    'og:title': 'Dusty Codes - About',
+    'og:description': 'Dusty Codes is a personal portfolio website of a software engineer, Dustin Hershman. Dustin is a full-stack developer with experience in JavaScript, Node.js, React, Vue, and more.'
   }
 }, {
   path: '/skills',
