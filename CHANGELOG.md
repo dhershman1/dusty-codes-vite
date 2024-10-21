@@ -6,7 +6,6 @@
 
 - Added Badge to README
 - Documentation link added to projects when applicable
-- Added link to resume to nav and landing page
 - Added bluesky to socials
 
 ### Changed

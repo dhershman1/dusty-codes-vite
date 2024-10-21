@@ -23,15 +23,6 @@
           Check out my open source work
         </a>
       </div>
-      <div class="resume__link">
-        <a
-          href="/main_resume.pdf"
-          target="_blank"
-          class="btn btn__secondary btn--lg"
-        >
-          View my resume
-        </a>
-      </div>
     </div>
   </section>
 </template>
@@ -87,10 +78,6 @@ onMounted(() => {
 figure img {
   height: auto;
   max-width: 100%;
-}
-
-.resume__link {
-  margin-bottom: 1rem;
 }
 
 .landing {

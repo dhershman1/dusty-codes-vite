@@ -32,14 +32,6 @@
               Projects
             </router-link>
           </li>
-          <li>
-            <a
-              href="/main_resume.pdf"
-              target="_blank"
-            >
-              Resume
-            </a>
-          </li>
         </ul>
       </nav>
     </header>
