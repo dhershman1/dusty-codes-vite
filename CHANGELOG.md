@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.0.3
+
+### New
+
+- Added robots.txt file
+- Added sitemap.xml file
+
+### Changed
+
+- Added Aria-labels to social links for accessibility
+- Attempted to add meta content to routes for preview (I dont think its working so well)
+
 ## v1.0.2
 
 ### New
