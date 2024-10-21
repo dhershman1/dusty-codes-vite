@@ -46,12 +46,14 @@
           target="_blank"
         >Dustin Hershman</a>
       </p>
+      <socials />
     </footer>
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import Socials from './components/Socials.vue'
 
 const showMobile = ref(false)
 

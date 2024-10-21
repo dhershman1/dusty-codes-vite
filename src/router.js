@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import About from './views/About.vue'
 import Skills from './views/Skills.vue'
-import Portfolio from './views/Portfolio.vue'
+import Projects from './views/Projects.vue'
 import Experience from './views/Experience.vue'
 import Landing from './views/Landing.vue'
 
@@ -30,7 +30,7 @@ const routes = [{
 }, {
   path: '/projects',
   name: 'Projects',
-  component: Portfolio,
+  component: Projects,
   meta: {
     title: 'Dusty Codes - Projects'
   }

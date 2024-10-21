@@ -18,6 +18,12 @@
     >
       <vue-feather type="linkedin" />
     </a>
+    <a
+      href="https://bsky.app/profile/dhershman.bsky.social"
+      target="_blank"
+    >
+      <vue-feather type="at-sign" />
+    </a>
     <a href="mailto:dustinh17@gmail.com">
       <vue-feather type="mail" />
     </a>
