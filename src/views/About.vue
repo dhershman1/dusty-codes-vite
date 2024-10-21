@@ -18,6 +18,15 @@
         <p>Please take your time to checkout my skills and projects!</p>
       </article>
     </div>
+    <div class="resume__link">
+      <a
+        href="/main_resume.pdf"
+        target="_blank"
+        class="btn btn__primary btn--lg"
+      >
+        View my resume
+      </a>
+    </div>
     <socials />
   </section>
 </template>
@@ -37,6 +46,11 @@ figure img {
 
 .about__text {
   display: grid;
+}
+
+.resume__link {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .about__text article {
