@@ -98,6 +98,12 @@ a:hover {
   text-align: center;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--dark);
@@ -124,5 +130,9 @@ a:hover {
 
   h2.amatic-sc-bold {
     font-size: 30px;
+  }
+
+  footer {
+    flex-direction: column;
   }
 }
