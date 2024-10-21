@@ -24,8 +24,5 @@
     >
       <vue-feather type="at-sign" />
     </a>
-    <a href="mailto:dustinh17@gmail.com">
-      <vue-feather type="mail" />
-    </a>
   </section>
 </template>
