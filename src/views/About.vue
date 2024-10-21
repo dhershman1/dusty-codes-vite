@@ -10,12 +10,10 @@
       <article>
         <p>Welcome to my personal site!</p>
         <p>
-          I've had a love for programming after teaching myself a little bit of Java for Runescape bots and private
-          servers, all with the power of Notepad! From there the rest is history and I've loved writing code ever since.
+          My journey into programming started in an unexpected way—by teaching myself Java to create Runescape bots and private servers, all with the power of Notepad! That early curiosity sparked a lifelong passion for writing code and solving problems. Since then, I've grown into a full-stack developer with over 10 years of experience, primarily working with Node.js, JavaScript, and Python.
         </p>
         <p>
-          I currently spend most of my time working in Node.js, JavaScript, and Python, but I'm always wanting to learn
-          more! My interests include API design, writing clean and quality code, and functional programming
+          I'm passionate about creating clean, high-quality code and have a strong interest in functional programming. Whether it's designing APIs, building web applications, or diving into new technologies, I love the challenge of continuously learning and refining my craft.
         </p>
         <p>Please take your time to checkout my skills and projects!</p>
       </article>
