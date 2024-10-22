@@ -1,0 +1,11 @@
+.brand {
+  mask: url(/brand.svg);
+  height: 2rem;
+  width: 2rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .brand {
+    fill: var(--accent);
+  }
+}

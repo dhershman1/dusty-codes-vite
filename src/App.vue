@@ -7,6 +7,10 @@
       />
       <nav :class="['nav-content', showMobile ? 'open-menu' : 'closed-menu']">
         <div class="logo">
+          <img
+            class="brand"
+            src="/brand.svg"
+          >
           <router-link to="/">
             Dusty Codes
           </router-link>
