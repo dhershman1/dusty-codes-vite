@@ -11,6 +11,7 @@ import './assets/css/grid.css'
 import './assets/css/nav.css'
 import './assets/css/timeline.css'
 import './assets/css/button.css'
+import './assets/css/brand.css'
 
 const app = createApp(App)
 

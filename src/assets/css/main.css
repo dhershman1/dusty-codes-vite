@@ -99,9 +99,15 @@ a:hover {
 }
 
 footer {
+  position: fixed;
   display: flex;
   align-items: center;
   gap: 1rem;
+  bottom: 0;
+}
+
+.skills {
+  margin-bottom: 1rem;
 }
 
 @media (prefers-color-scheme: light) {
@@ -132,7 +138,12 @@ footer {
     font-size: 30px;
   }
 
+  .skills {
+    margin-bottom: 0;
+  }
+
   footer {
     flex-direction: column;
+    position: relative;
   }
 }
