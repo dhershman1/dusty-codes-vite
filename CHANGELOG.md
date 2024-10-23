@@ -1,5 +1,21 @@
 # Changelog
 
+## v1.1.0
+
+### New
+
+- Added new branding svg
+- Added vite-svg-loader to load in svgs
+  - Might revisit the other svgs I'm using and use this loader
+
+
+### Changed
+
+- Made the landing page more minimal and removed the giant svg
+- Restyled the footer so that its fixed to the bottom on desktop
+  - It goes back to relative position on mobile as to not be in the way
+- Updated the favicon to the new branding
+
 ## v1.0.3
 
 ### New
