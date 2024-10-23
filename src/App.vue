@@ -7,11 +7,13 @@
       />
       <nav :class="['nav-content', showMobile ? 'open-menu' : 'closed-menu']">
         <div class="logo">
-          <img
-            class="brand"
-            src="/brand.svg"
+          <router-link
+            class="brand__wrapper"
+            to="/"
           >
-          <router-link to="/">
+            <span class="brand">
+              <brand />
+            </span>
             Dusty Codes
           </router-link>
         </div>
@@ -58,6 +60,7 @@
 <script setup>
 import { ref } from 'vue'
 import Socials from './components/Socials.vue'
+import brand from './assets/brand.svg'
 
 const showMobile = ref(false)
 
