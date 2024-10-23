@@ -15,6 +15,7 @@
 - Restyled the footer so that its fixed to the bottom on desktop
   - It goes back to relative position on mobile as to not be in the way
 - Updated the favicon to the new branding
+- CTA now leads to projects instead of npm to keep them on the site
 
 ## v1.0.3
 

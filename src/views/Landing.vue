@@ -12,13 +12,12 @@
       </span>
       <span class="blinking-cursor">|</span>
       <div class="landing__cta">
-        <a
-          href="https://www.npmjs.com/~killparadise"
-          target="_blank"
+        <router-link
+          to="/projects"
           class="btn btn__primary btn--lg"
         >
           Check out my open source work
-        </a>
+        </router-link>
       </div>
     </div>
   </section>
@@ -26,6 +25,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { RouterLink } from 'vue-router'
 import brand from '../assets/brand.svg'
 
 let idx = 1
