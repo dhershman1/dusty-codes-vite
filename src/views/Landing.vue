@@ -1,12 +1,9 @@
 <template>
   <section class="landing txt-center">
-    <figure class="landing__image">
-      <img
-        alt="progessive-app"
-        :src="svg"
-      >
-    </figure>
     <div class="landing__title">
+      <div class="brand">
+        <brand />
+      </div>
       <h1 class="amatic-sc-bold">
         Hi, I'm Dustin Hershman
       </h1>
@@ -28,20 +25,12 @@
 </template>
 
 <script setup>
-import { computed, ref, onMounted } from 'vue'
-import useDetectColorScheme from 'vue-color-detect'
+import { ref, onMounted } from 'vue'
+import brand from '../assets/brand.svg'
 
 let idx = 1
 let isAdding = true
 const typedText = ref('')
-const schemeMode = useDetectColorScheme()
-const svg = computed(() => {
-  if (schemeMode.value === 'LIGHT') {
-    return '/svgs/progressive-app.svg'
-  }
-
-  return '/svgs/progressive-app-dark.svg'
-})
 
 function typeAnimation (textToType) {
   setTimeout(function () {
@@ -82,7 +71,6 @@ figure img {
 
 .landing {
   display: grid;
-  grid-template-columns: 70% 30%;
 }
 
 .landing__title {
