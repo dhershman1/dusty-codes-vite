@@ -1,32 +1,3 @@
-<template>
-  <section class="experience">
-    <h2 class="txt-center amatic-sc-bold">
-      Experience
-    </h2>
-    <div class="timeline">
-      <div
-        v-for="item in exp"
-        :key="item.name"
-        class="timeline-item"
-      >
-        <div class="timeline-marker">
-          <vue-feather
-            class="is-small"
-            type="briefcase"
-          />
-        </div>
-        <div class="timeline-content">
-          <p class="heading">
-            {{ item.date }}
-          </p>
-          <b>{{ item.name }}</b>
-          <p>{{ item.position }}</p>
-        </div>
-      </div>
-    </div>
-  </section>
-</template>
-
 <script setup>
 import { computed } from 'vue'
 
@@ -61,3 +32,32 @@ const exp = computed(() => {
   ]
 })
 </script>
+
+<template>
+  <section class="experience">
+    <h2 class="txt-center amatic-sc-bold">
+      Experience
+    </h2>
+    <div class="timeline">
+      <div
+        v-for="item in exp"
+        :key="item.name"
+        class="timeline-item"
+      >
+        <div class="timeline-marker">
+          <vue-feather
+            class="is-small"
+            type="briefcase"
+          />
+        </div>
+        <div class="timeline-content">
+          <p class="heading">
+            {{ item.date }}
+          </p>
+          <b>{{ item.name }}</b>
+          <p>{{ item.position }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
