@@ -33,7 +33,12 @@ import { computed } from 'vue'
 const exp = computed(() => {
   return [
     {
-      date: 'September 2021 - Present',
+      date: 'November 2024 - Present',
+      name: 'CareAcademy',
+      position: 'Senior Software Engineer'
+    },
+    {
+      date: 'September 2021 - November 2024',
       name: 'Axuall, Inc',
       position: 'Senior Full Stack Software Engineer'
     }, {
