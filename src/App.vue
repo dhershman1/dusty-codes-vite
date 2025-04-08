@@ -1,3 +1,15 @@
+<script setup>
+import { ref } from 'vue'
+import Socials from './components/Socials.vue'
+import brand from './assets/brand.svg'
+
+const showMobile = ref(false)
+
+function showMenu () {
+  showMobile.value = !showMobile.value
+}
+</script>
+
 <template>
   <div class="grid">
     <header>
@@ -56,18 +68,6 @@
     </footer>
   </div>
 </template>
-
-<script setup>
-import { ref } from 'vue'
-import Socials from './components/Socials.vue'
-import brand from './assets/brand.svg'
-
-const showMobile = ref(false)
-
-function showMenu () {
-  showMobile.value = !showMobile.value
-}
-</script>
 
 <style scoped>
 .blinking-cursor {
