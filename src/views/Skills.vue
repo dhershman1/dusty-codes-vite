@@ -97,6 +97,11 @@ const skills = [
     link: 'https://www.mysql.com/',
     level: 'intermediate'
   }, {
+    name: 'Ruby',
+    img: 'ruby.png',
+    link: 'https://www.ruby-lang.org/en/',
+    level: 'studying'
+  }, {
     name: 'Golang',
     img: 'go.png',
     link: 'https://go.dev/',
