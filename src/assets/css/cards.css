@@ -19,10 +19,11 @@
 }
 
 .card__actions {
-  align-items: center;
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   padding: 0.5rem;
   justify-content: end;
+  gap: 0.2rem;
 }
 
 .card__main {
@@ -35,6 +36,9 @@
 
 .card__main .card__img {
   text-align: center;
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
 }
 
 .portfolio .card__main {
@@ -42,7 +46,22 @@
 }
 
 .card__main img {
-  max-width: 100px;
+  max-width: 6.25rem;
+}
+
+.card__main svg {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+.card__actions svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.card__actions span {
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 .card__text {
