@@ -4,8 +4,8 @@ import { computed } from 'vue'
 const exp = computed(() => {
   return [
     {
-      date: 'November 2024 - Present',
-      name: 'CareAcademy',
+      date: 'November 2024 - September 2026',
+      name: 'Activated Insights (Formerly CareAcademy)',
       position: 'Senior Software Engineer'
     },
     {
