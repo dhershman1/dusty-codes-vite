@@ -14,7 +14,10 @@
       >
         <template #main>
           <div class="card__img">
-            <component :is="skill.icon" aria-hidden="true" />
+            <component
+              :is="skill.icon"
+              aria-hidden="true"
+            />
           </div>
           <progress-circle :level="skill.level" />
         </template>

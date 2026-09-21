@@ -9,8 +9,7 @@
         :key="item.name"
         class="timeline-item"
       >
-        <div class="timeline-marker">
-        </div>
+        <div class="timeline-marker" />
         <div class="timeline-content">
           <p class="heading">
             {{ item.date }}
