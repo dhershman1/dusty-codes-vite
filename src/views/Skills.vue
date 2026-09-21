@@ -16,7 +16,7 @@
           <div class="card__img">
             <img
               :alt="skill.name"
-              :src="`/imgs/${skill.img}`"
+              :src="`/icons/${skill.icon}.svg`"
             >
           </div>
           <progress-circle :level="skill.level" />
@@ -38,87 +38,87 @@ import ProgressCircle from '../components/ProgressCircle.vue'
 const skills = [
   {
     name: 'JavaScript',
-    img: 'js.jpg',
+    icon: 'javascript',
     link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     level: 'expert'
   }, {
     name: 'JSON',
-    img: 'json.png',
+    icon: 'json',
     link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON',
     level: 'expert'
   }, {
     name: 'HTML',
-    img: 'html.png',
+    icon: 'html5',
     link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
     level: 'professional'
   }, {
     name: 'CSS',
-    img: 'css.png',
+    icon: 'css3',
     link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     level: 'professional'
   }, {
     name: 'Node.js',
-    img: 'node.png',
+    icon: 'nodejs',
     link: 'https://nodejs.org/',
     level: 'professional'
   }, {
     name: 'React',
-    img: 'react.png',
+    icon: 'react',
     link: 'https://react.dev/',
     level: 'professional'
   }, {
     name: 'Vue',
-    img: 'vue.png',
+    icon: 'vuejs',
     link: 'https://vuejs.org',
     level: 'professional'
   }, {
     name: 'Python',
-    img: 'python.png',
+    icon: 'python',
     link: 'https://www.python.org/',
     level: 'intermediate'
   }, {
     name: 'Elm',
-    img: 'elm.png',
+    icon: 'elm',
     link: 'https://elm-lang.org/',
     level: 'intermediate'
   }, {
     name: 'Typescript',
-    img: 'typescript.png',
+    icon: 'typescript',
     link: 'https://www.typescriptlang.org/',
     level: 'intermediate'
   }, {
     name: 'PostgreSQL',
-    img: 'postgres.png',
+    icon: 'postgresql',
     link: 'https://www.postgresql.org/',
     level: 'intermediate'
   }, {
     name: 'MySQL',
-    img: 'mysql.png',
+    icon: 'mysql',
     link: 'https://www.mysql.com/',
     level: 'intermediate'
   }, {
     name: 'Ruby',
-    img: 'ruby.png',
+    icon: 'ruby',
     link: 'https://www.ruby-lang.org/en/',
     level: 'studying'
   }, {
     name: 'Golang',
-    img: 'go.png',
+    icon: 'go',
     link: 'https://go.dev/',
     level: 'studying'
   }, {
     name: 'AWS',
-    img: 'aws.png',
+    icon: 'aws',
     link: 'https://aws.amazon.com/',
     level: 'studying'
   }, {
     name: 'Haskell',
-    img: 'haskell.png',
+    icon: 'haskell',
     link: 'https://www.haskell.org/',
     level: 'studying'
   }, {
     name: 'Clojure',
-    img: 'clojure.png',
+    icon: 'clojure',
     link: 'https://clojure.org/',
     level: 'studying'
   }
