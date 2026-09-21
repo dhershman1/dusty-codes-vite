@@ -3,11 +3,6 @@
   flex-direction: column;
 }
 
-.is-small {
-  height: 0.8rem;
-  width: 0.8rem;
-}
-
 .timeline-item {
   display: flex;
   width: 50%;
@@ -77,10 +72,12 @@
   transform: translateX(50%);
 }
 
-.timeline-marker .vue-feather {
+.timeline-marker .timeline-icon {
   position: absolute;
   left: 0.09rem;
   top: 0.09rem;
+  font-size: 0.7rem;
+  line-height: 1;
   color: var(--jet);
 }
 
@@ -97,7 +94,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .timeline-marker .vue-feather {
+  .timeline-marker .timeline-icon {
     color: var(--timeline)
   }
 
