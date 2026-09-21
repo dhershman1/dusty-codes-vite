@@ -1,32 +1,42 @@
 <template>
   <section class="socials">
     <a
-      href="https://twitter.com/sirdugs"
-      target="_blank"
-      aria-label="My Twitter Profile"
-    >
-      <vue-feather type="twitter" />
-    </a>
-    <a
       href="https://github.com/dhershman1"
       target="_blank"
       aria-label="My Github Profile"
     >
-      <vue-feather type="github" />
+      <github-icon />
     </a>
     <a
       href="https://www.linkedin.com/in/dustin-hershman/"
       target="_blank"
       aria-label="My LinkedIn Profile"
     >
-      <vue-feather type="linkedin" />
+      <linkedin-icon />
     </a>
     <a
-      href="https://bsky.app/profile/dhershman.bsky.social"
+      href="https://bsky.app/profile/dusty.codes"
       target="_blank"
       aria-label="My BlueSky Profile"
     >
-      <vue-feather type="at-sign" />
+      <span aria-hidden="true">@</span>
     </a>
   </section>
 </template>
+
+<script setup>
+import { GithubIcon } from '@dev.icons/vue/mono'
+import LinkedinIcon from 'devicon/icons/linkedin/linkedin-original.svg'
+</script>
+
+<style scoped>
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+span {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+</style>
