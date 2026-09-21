@@ -13,10 +13,13 @@ function showMenu () {
 <template>
   <div class="grid">
     <header>
-      <vue-feather
-        type="menu"
+      <button
+        class="menu-icon"
+        aria-label="Toggle menu"
         @click="showMenu()"
-      />
+      >
+        ☰
+      </button>
       <nav :class="['nav-content', showMobile ? 'open-menu' : 'closed-menu']">
         <div class="logo">
           <router-link
@@ -78,8 +81,13 @@ main {
   display: grid;
 }
 
-i {
-  color: var(--white);
+.menu-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--jet);
   display: none;
 }
 
@@ -89,12 +97,8 @@ i {
   font-size: 30px;
 }
 
-.vue-feather--menu {
-  color: var(--jet);
-}
-
 @media screen and (max-width: 768px) {
-  i {
+  .menu-icon {
     display: flex;
     padding: 1rem;
     justify-content: end;
@@ -106,7 +110,7 @@ i {
     color: var(--dark);
   }
 
-  .vue-feather--menu {
+  .menu-icon {
     color: var(--white);
   }
 }

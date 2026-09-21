@@ -7,15 +7,24 @@
         v-if="props.goToLink"
         :href="props.goToLink"
         target="_blank"
+        :aria-label="icon === 'github' ? 'View on GitHub' : 'Visit site'"
       >
-        <vue-feather :type="icon" />
+        <github-icon
+          v-if="icon === 'github'"
+          aria-hidden="true"
+        />
+        <span
+          v-else
+          aria-hidden="true"
+        >↗</span>
       </a>
       <a
         v-if="props.docLink"
         :href="props.docLink"
         target="_blank"
+        aria-label="View documentation"
       >
-        <vue-feather type="book-open" />
+        <span aria-hidden="true">↗</span>
       </a>
     </section>
     <section class="card__main">
@@ -30,6 +39,7 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useMotion } from '@vueuse/motion'
+import { GithubIcon } from '@dev.icons/vue/mono'
 
 const animation = (i) => ({
   initial: {

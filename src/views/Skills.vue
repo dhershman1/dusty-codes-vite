@@ -14,10 +14,7 @@
       >
         <template #main>
           <div class="card__img">
-            <img
-              :alt="skill.name"
-              :src="`/icons/${skill.icon}.svg`"
-            >
+            <component :is="skill.icon" aria-hidden="true" />
           </div>
           <progress-circle :level="skill.level" />
         </template>
@@ -34,91 +31,111 @@
 <script setup>
 import Card from '../components/Card.vue'
 import ProgressCircle from '../components/ProgressCircle.vue'
+import {
+  Javascript as JavascriptIcon,
+  Json as JsonIcon,
+  Css3 as Css3Icon,
+  NodejsIcon,
+  _React as ReactIcon,
+  _Vue as VuejsIcon,
+  Python as PythonIcon,
+  Elm as ElmIcon,
+  TypescriptIcon,
+  Postgresql as PostgresqlIcon,
+  Mysql as MysqlIcon,
+  Ruby as RubyIcon,
+  Go as GoIcon,
+  Aws as AwsIcon,
+  HaskellIcon,
+  Clojure as ClojureIcon
+} from '@dev.icons/vue'
+// @dev.icons/vue's Html5 icon renders flat black instead of the brand orange, so sourced from devicon directly
+import Html5Icon from 'devicon/icons/html5/html5-original.svg'
 
 const skills = [
   {
     name: 'JavaScript',
-    icon: 'javascript',
+    icon: JavascriptIcon,
     link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     level: 'expert'
   }, {
     name: 'JSON',
-    icon: 'json',
+    icon: JsonIcon,
     link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON',
     level: 'expert'
   }, {
     name: 'HTML',
-    icon: 'html5',
+    icon: Html5Icon,
     link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
     level: 'professional'
   }, {
     name: 'CSS',
-    icon: 'css3',
+    icon: Css3Icon,
     link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     level: 'professional'
   }, {
     name: 'Node.js',
-    icon: 'nodejs',
+    icon: NodejsIcon,
     link: 'https://nodejs.org/',
     level: 'professional'
   }, {
     name: 'React',
-    icon: 'react',
+    icon: ReactIcon,
     link: 'https://react.dev/',
     level: 'professional'
   }, {
     name: 'Vue',
-    icon: 'vuejs',
+    icon: VuejsIcon,
     link: 'https://vuejs.org',
     level: 'professional'
   }, {
     name: 'Python',
-    icon: 'python',
+    icon: PythonIcon,
     link: 'https://www.python.org/',
     level: 'intermediate'
   }, {
     name: 'Elm',
-    icon: 'elm',
+    icon: ElmIcon,
     link: 'https://elm-lang.org/',
     level: 'intermediate'
   }, {
     name: 'Typescript',
-    icon: 'typescript',
+    icon: TypescriptIcon,
     link: 'https://www.typescriptlang.org/',
     level: 'intermediate'
   }, {
     name: 'PostgreSQL',
-    icon: 'postgresql',
+    icon: PostgresqlIcon,
     link: 'https://www.postgresql.org/',
     level: 'intermediate'
   }, {
     name: 'MySQL',
-    icon: 'mysql',
+    icon: MysqlIcon,
     link: 'https://www.mysql.com/',
     level: 'intermediate'
   }, {
     name: 'Ruby',
-    icon: 'ruby',
+    icon: RubyIcon,
     link: 'https://www.ruby-lang.org/en/',
     level: 'studying'
   }, {
     name: 'Golang',
-    icon: 'go',
+    icon: GoIcon,
     link: 'https://go.dev/',
     level: 'studying'
   }, {
     name: 'AWS',
-    icon: 'aws',
+    icon: AwsIcon,
     link: 'https://aws.amazon.com/',
     level: 'studying'
   }, {
     name: 'Haskell',
-    icon: 'haskell',
+    icon: HaskellIcon,
     link: 'https://www.haskell.org/',
     level: 'studying'
   }, {
     name: 'Clojure',
-    icon: 'clojure',
+    icon: ClojureIcon,
     link: 'https://clojure.org/',
     level: 'studying'
   }
